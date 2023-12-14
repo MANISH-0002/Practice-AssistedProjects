@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "3a7eb80f-ab8f-462b-837b-3a633f76e6d2",
+		"name": "HTTP-Methods",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31715035"
+	},
+	"item": [
+		{
+			"name": "GetMethod-Demo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{xapikey}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.postman.com/workspaces",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"workspaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostMethod-Demo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{xapikey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"workspace\": \r\n        {\r\n         \r\n            \"name\": \"Workspace-1\",\r\n            \"type\": \"personal\",\r\n            \"visibility\": \"personal\",\r\n            \"description\":\"This is Created from Postman\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.postman.com/workspaces",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"workspaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutMethod-Demo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{xapikey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"workspace\": {\r\n        \"id\": \"e5557117-9bbc-465b-a6e3-6a8e74e0cb6f\",\r\n        \"name\": \"Workspace-1-Updated\",\r\n        \"type\": \"personal\",\r\n        \"description\": \"This is Created from Postman\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.postman.com/workspaces/e5557117-9bbc-465b-a6e3-6a8e74e0cb6f",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"workspaces",
+						"e5557117-9bbc-465b-a6e3-6a8e74e0cb6f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteMethod-Demo",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{xapikey}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.postman.com/workspaces/e5557117-9bbc-465b-a6e3-6a8e74e0cb6f",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"workspaces",
+						"e5557117-9bbc-465b-a6e3-6a8e74e0cb6f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Options-Demo",
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{xapikey}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.postman.com/workspaces",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"workspaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetReqDemo",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{xapikey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Updating using patch\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/25",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetReqDemo Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{xapikey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"name\": \"{{$randomFullName}}\",\r\n    \"username\": \"{{$randomUserName}}\",\r\n    \"email\": \"Sincere@april.biz\",\r\n    \"address\": {\r\n        \"street\": \"{{$randomStreetName}}\",\r\n        \"suite\": \"Apt. 556\",\r\n        \"city\": \"Gwenborough\",\r\n        \"zipcode\": \"92998-3874\",\r\n        \"geo\": {\r\n            \"lat\": \"-37.3159\",\r\n            \"lng\": \"81.1496\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "PMapikey",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

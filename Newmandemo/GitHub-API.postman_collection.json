@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "d4c1fcbc-1a02-4a8f-b67e-70aad7dab1eb",
+		"name": "GitHub-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31715035"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Status code is 200\",function(){\r",
+							"\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Response body contains 'MANISH-0002\",function(){\r",
+							"    pm.expect(pm.response.text()).include(\"MANISH-0002\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/user/repos",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"user",
+						"repos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get SpefRequest",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\",function(){\r",
+							"\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 500ms\",function(){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-type should be application/json\",function(){\r",
+							"    pm.response.to.have.header(\"Content-type\",\"application/json; charset=utf-8\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response body is valid Json\",function(){\r",
+							"pm.response.to.be.json;\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Check specific field\",function(){\r",
+							" pm.expect(pm.response.json()).to.have.property(\"id\");\r",
+							" pm.expect(pm.response.json()).to.have.property(\"node_id\");\r",
+							" pm.expect(pm.response.json()).to.have.property(\"full_name\");\r",
+							" pm.expect(pm.response.json()).to.have.property(\"private\");\r",
+							" pm.expect(pm.response.json()).to.have.property(\"name\");\r",
+							"});\r",
+							"\r",
+							"resData = JSON.parse(responseBody);\r",
+							"\r",
+							"console.log(resData.id);\r",
+							"console.log(resData.name);\r",
+							"console.log(resData.full_name);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/repos/:owner/:repos",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						":owner",
+						":repos"
+					],
+					"variable": [
+						{
+							"key": "owner",
+							"value": "MANISH-0002"
+						},
+						{
+							"key": "repos",
+							"value": "Sparks-foundation"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

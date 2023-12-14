@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "3e806b60-6a9f-4ef6-9585-ab018ce17ad2",
+		"name": "mock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31715035"
+	},
+	"item": [
+		{
+			"name": "demo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n            \"id\": 7,\n            \"email\": \"michael.lawson@reqres.in\",\n            \"first_name\": \"Michael\",\n            \"last_name\": \"Lawson\",\n            \"avatar\": \"https://reqres.in/img/faces/7-image.jpg\"\n        }"
+				},
+				"url": {
+					"raw": "{{url}}/demo",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"demo"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n            \"id\": 7,\n            \"email\": \"michael.lawson@reqres.in\",\n            \"first_name\": \"Michael\",\n            \"last_name\": \"Lawson\",\n            \"avatar\": \"https://reqres.in/img/faces/7-image.jpg\"\n        }"
+						},
+						"url": {
+							"raw": "{{url}}/demo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"demo"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://a5e03954-57bf-4432-b1d2-f4a4b3c2cf6d.mock.pstmn.io"
+		}
+	]
+}
