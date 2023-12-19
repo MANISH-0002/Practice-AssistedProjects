@@ -1,0 +1,20 @@
+[INFO ] 2023-12-19 11:57:25.637 [main] Log4jDemo - this is a info method
+[ERROR] 2023-12-19 11:57:25.639 [main] Log4jDemo - this is a error method
+[INFO ] 2023-12-19 11:58:53.573 [main] Log4jDemo - this is a info method
+[ERROR] 2023-12-19 11:58:53.576 [main] Log4jDemo - this is a error method
+[FATAL] 2023-12-19 11:58:53.576 [main] Log4jDemo - this is a fatal method
+[INFO ] 2023-12-19 14:13:57.096 [main] Assignment001Demo - Course End Project - Assignment001 - Post Request
+[INFO ] 2023-12-19 14:14:02.784 [main] Assignment001Demo - Course End Project - Assignment001 - Get Request
+[INFO ] 2023-12-19 14:14:04.428 [main] Assignment001Demo - Course End Project - Assignment001 - Delete Request
+[INFO ] 2023-12-19 14:20:16.283 [main] Assignment002Demo - Course End project - Assignment002 - POST request
+[INFO ] 2023-12-19 14:21:54.659 [main] Assignment002Demo - Course End project - Assignment002 - POST request
+[INFO ] 2023-12-19 16:45:27.576 [main] Assignment001Demo - Course End Project - Assignment001 - Post Request
+[INFO ] 2023-12-19 16:45:54.025 [main] Assignment001Demo - Course End Project - Assignment001 - Post Request
+[INFO ] 2023-12-19 16:45:56.987 [main] Assignment001Demo - Course End Project - Assignment001 - Get Request
+[INFO ] 2023-12-19 16:46:19.389 [main] Assignment001Demo - Course End Project - Assignment001 - Post Request
+[INFO ] 2023-12-19 16:46:22.284 [main] Assignment001Demo - Course End Project - Assignment001 - Get Request
+[INFO ] 2023-12-19 16:46:56.388 [main] Assignment001Demo - Course End Project - Assignment001 - Post Request
+[INFO ] 2023-12-19 16:46:59.355 [main] Assignment001Demo - Course End Project - Assignment001 - Get Request
+[INFO ] 2023-12-19 16:47:00.517 [main] Assignment001Demo - Course End Project - Assignment001 - Delete Request
+[INFO ] 2023-12-19 16:51:56.420 [main] Assignment002Demo - Course End project - Assignment002 - POST request
+[INFO ] 2023-12-19 16:52:15.923 [main] Assignment002Demo - Course End project - Assignment002 - POST request
